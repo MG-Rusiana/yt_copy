@@ -342,12 +342,16 @@
   .navbar-box .navbar-middle {
     justify-content: flex-end;
   }
-  .navbar-box .navbar-middle div .search {
+  .navbar-box .navbar-middle .search-box {
+    width: 60px;
+  }
+  .navbar-box .navbar-middle .search-box div .search {
     display: none;
   }
-  .navbar-box .navbar-middle div .search-icon {
+  .navbar-box .navbar-middle .search-box div .search-icon {
     width: 90%;
     background-color: transparent;
+    border: none;
   }
   .tab-container .all {
     margin-left: 16px;
@@ -357,5 +361,17 @@
 @media only screen and (max-width: 620px) {
   .navbar-box .navbar-middle img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-box .navbar-right {
+    width: 50px;
+  }
+  .navbar-box .navbar-right img {
+    display: none;
+  }
+  .navbar-box .navbar-right .profile {
+    display: flex;
   }
 }

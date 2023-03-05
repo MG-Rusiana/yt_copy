@@ -310,13 +310,17 @@ $font-color: #f1f1f1;
     .navbar-box {
         .navbar-middle {
             justify-content: flex-end;
-            div {
-                .search{
-                    display: none;
-                }
-                .search-icon {
-                    width: 90%;
-                    background-color: transparent;
+            .search-box{
+                width: 60px;
+                div {
+                    .search{
+                        display: none;
+                    }
+                    .search-icon {
+                        width: 90%;
+                        background-color: transparent;
+                        border: none;
+                    }
                 }
             }
         }
@@ -333,6 +337,20 @@ $font-color: #f1f1f1;
         .navbar-middle {
             img {
                 display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-box {
+        .navbar-right {
+            width: 50px;
+            img {
+                display: none;
+            }
+            .profile {
+                display: flex;
             }
         }
     }
