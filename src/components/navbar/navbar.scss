@@ -318,7 +318,7 @@ $font-color: #f1f1f1;
                     }
                     .search-icon {
                         width: 50%;
-                        background-color: blue;
+                        background-color: transparent;
                         border: none;
                     }
                 }
@@ -340,7 +340,7 @@ $font-color: #f1f1f1;
                 width: 5px;
                 div {
                     .search-icon {
-                        background-color: blue;
+                        margin-right: 20px;
                         border: none;
                     }
                 }
@@ -356,6 +356,7 @@ $font-color: #f1f1f1;
     .navbar-box {
         .navbar-middle{
             justify-content: flex-end;
+            padding-right: 25px;
         }
         .navbar-right {
             width: 50px;
@@ -363,6 +364,7 @@ $font-color: #f1f1f1;
                 display: none;
             }
             .profile {
+                margin-right: 15px;
                 display: flex;
             }
         }

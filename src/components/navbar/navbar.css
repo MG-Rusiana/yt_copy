@@ -350,7 +350,7 @@
   }
   .navbar-box .navbar-middle .search-box div .search-icon {
     width: 50%;
-    background-color: blue;
+    background-color: transparent;
     border: none;
   }
   .tab-container .all {
@@ -366,7 +366,7 @@
     width: 5px;
   }
   .navbar-box .navbar-middle .search-box div .search-icon {
-    background-color: blue;
+    margin-right: 20px;
     border: none;
   }
   .navbar-box .navbar-middle img {
@@ -377,6 +377,7 @@
 @media only screen and (max-width: 400px) {
   .navbar-box .navbar-middle {
     justify-content: flex-end;
+    padding-right: 25px;
   }
   .navbar-box .navbar-right {
     width: 50px;
@@ -385,6 +386,7 @@
     display: none;
   }
   .navbar-box .navbar-right .profile {
+    margin-right: 15px;
     display: flex;
   }
 }
