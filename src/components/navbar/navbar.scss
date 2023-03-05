@@ -1,0 +1,174 @@
+$font : arial;
+$main-color: #0F0F0F;
+$second-color: #121212;
+$third-color: #222222;
+
+.navbarmain {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.navbar-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55px;
+    background-color: $main-color;
+    .navbar-left{
+        width: 24%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:15px;
+        .menu {
+            width: 35px;
+            height: 35px;
+        }
+        .logo {
+            width: 150px;
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+    .navbar-middle{
+        width: 52%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        div {
+            width: 85%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            .search{
+                display: flex;
+                width: 90%;
+                width: 100%;
+                color: rgba(255, 255, 255, 0.88);
+                background-color: $second-color;
+                font-size: 16px;
+                padding-left: 20px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                outline: 0px;
+            }
+            .search-icon {
+                width: 15%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                background-color: $third-color;
+                .icon {
+                    color: #ffffff;
+                }
+            }
+        }
+        img {
+            display: flex;
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .navbar-right{
+        width: 24%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        padding-right: 25px;
+        img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+        .profile {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+    }
+}
+
+.tab-container {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    background-color: $main-color;
+    .all {
+        height: 60%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F1F1F1;
+        margin-left: 85px;
+        padding-left: 12px;
+        padding-right: 12px;
+        p{
+            color: #000000;
+            font-size: 14px;
+        }
+    }
+    .others {
+        height: 60%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $third-color;
+        padding-left: 12px;
+        padding-right: 12px;
+        p{
+            color: #f1f1f1;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .navbar-box {
+        .navbar-middle {
+            justify-content: flex-end;
+            div {
+                .search{
+                    display: none;
+                }
+                .search-icon {
+                    width: 90%;
+                    background-color: transparent;
+                }
+            }
+        }
+    }   
+    .tab-container {
+        .all {
+            margin-left: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .navbar-box {
+        .navbar-middle {
+            img {
+                display: none;
+            }
+        }
+    }
+}

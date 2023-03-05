@@ -1,0 +1,22 @@
+
+.sidebarmain {
+    width: 65px;
+    height: 50vh;
+    display: flex;
+    position: fixed;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .sidebarmain{
+        display: none;
+    }
+}
