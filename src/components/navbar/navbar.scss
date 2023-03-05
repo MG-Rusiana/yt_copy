@@ -3,6 +3,7 @@ $main-color: #0F0F0F;
 $second-color: #121212;
 $third-color: #222222;
 $focus-color: #1877F2;
+$font-color: #f1f1f1;
 
 .navbarmain {
     width: 100%;
@@ -47,36 +48,92 @@ $focus-color: #1877F2;
             width: 85%;
             height: 70%;
             display: flex;
-            flex-direction: row;
-            .search{
-                display: flex;
-                width: 90%;
+            flex-direction: column;
+            div{
                 width: 100%;
-                color: rgba(255, 255, 255, 0.88);
-                background-color: $second-color;
-                font-size: 16px;
-                padding-left: 20px;
-                border-top-left-radius: 30px;
-                border-bottom-left-radius: 30px;
-                outline: 0px;
-                border: 1px solid gray;
-            }
-            .search:focus {
-                border: 1px solid $focus-color;
-            }
-            .search-icon {
-                width: 15%;
-                height: 97%;
+                height: 99%;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 30px;
-                background-color: $third-color;
-                border: 1px solid gray;
-                border-left: none;
-                .icon {
-                    color: #ffffff;
+                flex-direction: row;
+                .search{
+                    display: flex;
+                    width: 90%;
+                    width: 100%;
+                    color: rgba(255, 255, 255, 0.88);
+                    background-color: $second-color;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    outline: 0px;
+                    border: 1px solid gray;
+                }
+                .search:focus {
+                    border: 1px solid $focus-color;
+                }
+                .search-icon {
+                    width: 15%;
+                    height: 97%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    background-color: $third-color;
+                    border: 1px solid gray;
+                    border-left: none;
+                    .icon {
+                        color: #ffffff;
+                    }
+                }
+            }
+            .suggestion-relative {
+                width: 85%;
+                height: 1%;
+                .suggestions {
+                    display: flex;
+                    position: relative;
+                    z-index: 10;
+                    top:8px;
+                    width: 100%;
+                    height: 400px;
+                    min-width: 300px;
+                    border-radius: 10px;
+                    background-color: #ffffff; 
+                    margin-left: 10px;
+                    padding: 15px;
+                    flex-direction: column;
+                    .suggest {
+                        display: flex;
+                        width: 100%;
+                        height: 40px;
+                        flex-direction: row;
+                        .hahayst{
+                            height: 100%;
+                            width: 7%;
+                            display: flex;
+                            align-items: center;
+                            .re-search {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        .search-history {
+                            width: 75%;
+                            height: 100%;
+                            margin: 0px;
+                            align-items: center;
+                            font-weight: 500;
+                        }
+                        .remove {
+                            height: 100%;
+                            width: 15%;
+                            margin: 0px;
+                            color: $focus-color;
+                            font-weight: 300;
+                            padding-right: 5px;
+                            align-items: center;
+                        }
+                    }
                 }
             }
         }
@@ -144,6 +201,107 @@ $focus-color: #1877F2;
         p{
             color: #f1f1f1;
             font-size: 14px;
+        }
+    }
+}
+
+.profile-container {
+    width: 295px;
+    height: 585px;
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 73px;
+    background-color: $third-color;
+    border-radius: 10px;
+    flex-direction: column;
+    .profile-top {
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        border-bottom: solid 1px gray;
+        .left {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+        .right {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            .normal {
+                font-family: $font;
+                font-size: 16px;
+                color: $font-color;
+                margin: 0px;
+            }
+            .blue {
+                margin: 0px;
+                font-family: $font;
+                color: $focus-color;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .profile-middle {
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+        border-bottom: solid 1px gray;
+        p {
+            font-family: $font;
+            font-size: 14px;
+            color: $font-color;
+            margin: 0px;
+        }
+    }
+    .profile-middle-2 {
+        height: 55px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+        border-bottom: solid 1px gray;
+        p {
+            font-family: $font;
+            font-size: 14px;
+            color: $font-color;
+            margin: 0px;
+        }
+    }
+    .profile-middle-3    {
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+        border-bottom: solid 1px gray;
+        p {
+            font-family: $font;
+            font-size: 14px;
+            color: $font-color;
+            margin: 0px;
+        }
+    }
+    .settings {
+        padding: 15px;
+        p {
+            font-family: $font;
+            font-size: 14px;
+            color: $font-color;
+            margin: 0px;
         }
     }
 }

@@ -48,10 +48,17 @@
   width: 85%;
   height: 70%;
   display: flex;
+  flex-direction: column;
+}
+
+.navbar-box .navbar-middle .search-box div {
+  width: 100%;
+  height: 99%;
+  display: flex;
   flex-direction: row;
 }
 
-.navbar-box .navbar-middle .search-box .search {
+.navbar-box .navbar-middle .search-box div .search {
   display: flex;
   width: 90%;
   width: 100%;
@@ -65,11 +72,11 @@
   border: 1px solid gray;
 }
 
-.navbar-box .navbar-middle .search-box .search:focus {
+.navbar-box .navbar-middle .search-box div .search:focus {
   border: 1px solid #1877F2;
 }
 
-.navbar-box .navbar-middle .search-box .search-icon {
+.navbar-box .navbar-middle .search-box div .search-icon {
   width: 15%;
   height: 97%;
   display: flex;
@@ -82,8 +89,65 @@
   border-left: none;
 }
 
-.navbar-box .navbar-middle .search-box .search-icon .icon {
+.navbar-box .navbar-middle .search-box div .search-icon .icon {
   color: #ffffff;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative {
+  width: 85%;
+  height: 1%;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative .suggestions {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  top: 8px;
+  width: 100%;
+  height: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-left: 10px;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative .suggestions .suggest {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  flex-direction: row;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative .suggestions .suggest .hahayst {
+  height: 100%;
+  width: 7%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative .suggestions .suggest .hahayst .re-search {
+  width: 18px;
+  height: 18px;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative .suggestions .suggest .search-history {
+  width: 75%;
+  height: 100%;
+  margin: 0px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navbar-box .navbar-middle .search-box .suggestion-relative .suggestions .suggest .remove {
+  height: 100%;
+  width: 15%;
+  margin: 0px;
+  color: #1877F2;
+  font-weight: 300;
+  padding-right: 5px;
+  align-items: center;
 }
 
 .navbar-box .navbar-middle img {
@@ -157,6 +221,121 @@
 .tab-container .others p {
   color: #f1f1f1;
   font-size: 14px;
+}
+
+.profile-container {
+  width: 295px;
+  height: 585px;
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 73px;
+  background-color: #222222;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.profile-container .profile-top {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-bottom: solid 1px gray;
+}
+
+.profile-container .profile-top .left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+}
+
+.profile-container .profile-top .left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-container .profile-top .right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.profile-container .profile-top .right .normal {
+  font-family: arial;
+  font-size: 16px;
+  color: #f1f1f1;
+  margin: 0px;
+}
+
+.profile-container .profile-top .right .blue {
+  margin: 0px;
+  font-family: arial;
+  color: #1877F2;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.profile-container .profile-middle {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+  border-bottom: solid 1px gray;
+}
+
+.profile-container .profile-middle p {
+  font-family: arial;
+  font-size: 14px;
+  color: #f1f1f1;
+  margin: 0px;
+}
+
+.profile-container .profile-middle-2 {
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+  border-bottom: solid 1px gray;
+}
+
+.profile-container .profile-middle-2 p {
+  font-family: arial;
+  font-size: 14px;
+  color: #f1f1f1;
+  margin: 0px;
+}
+
+.profile-container .profile-middle-3 {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+  border-bottom: solid 1px gray;
+}
+
+.profile-container .profile-middle-3 p {
+  font-family: arial;
+  font-size: 14px;
+  color: #f1f1f1;
+  margin: 0px;
+}
+
+.profile-container .settings {
+  padding: 15px;
+}
+
+.profile-container .settings p {
+  font-family: arial;
+  font-size: 14px;
+  color: #f1f1f1;
+  margin: 0px;
 }
 
 @media only screen and (max-width: 790px) {

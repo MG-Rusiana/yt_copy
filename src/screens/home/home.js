@@ -13,6 +13,10 @@ import img6 from './../../img/explore.png'
 import i6 from './../../img/icon6.png'
 import img7 from './../../img/tenchan.png'
 import i7 from './../../img/icon7.png'
+import img8 from './../../img/codehal.png'
+import i8 from './../../img/icon8.png'
+import img9 from './../../img/takelessons.png'
+import i9 from './../../img/icon9.png'
 import { Navbar } from '../../components/navbar/navbar'
 import { Sidebar } from '../../components/sidebar/sidebar'
 
@@ -66,6 +70,20 @@ export const Home = () => {
             title: "【雨宮天×青鬼】音量注意！ゲーム実況ならぬゲーム絶叫！！", 
             channel: "Sora Amamiya Subchannel", 
             views: "210K views - 5 months ago"
+        },
+        { 
+            img: img8, 
+            icon: i8, 
+            title: "How To Make a Website with Login and Register | HTML CSS & Javascript", 
+            channel: "Codehal", 
+            views: "127K views - 1 month ago"
+        },
+        { 
+            img: img9, 
+            icon: i9, 
+            title: "How To Do a Spanish // Sound Like a Native Speaker", 
+            channel: "TakeLessons", 
+            views: "325K views - 3 years ago"
         },
     ]
 
