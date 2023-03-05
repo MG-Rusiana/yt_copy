@@ -111,7 +111,6 @@
   .cards-container {
     width: 100%;
     gap: 30px;
-    margin-left: -4px;
   }
   .card {
     width: 335px;
