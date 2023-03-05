@@ -2,6 +2,7 @@ $font : arial;
 $main-color: #0F0F0F;
 $second-color: #121212;
 $third-color: #222222;
+$focus-color: #1877F2;
 
 .navbarmain {
     width: 100%;
@@ -42,7 +43,7 @@ $third-color: #222222;
         justify-content: center;
         align-items: center;
         gap: 8px;
-        div {
+        .search-box {
             width: 85%;
             height: 70%;
             display: flex;
@@ -58,16 +59,22 @@ $third-color: #222222;
                 border-top-left-radius: 30px;
                 border-bottom-left-radius: 30px;
                 outline: 0px;
+                border: 1px solid gray;
+            }
+            .search:focus {
+                border: 1px solid $focus-color;
             }
             .search-icon {
                 width: 15%;
-                height: 100%;
+                height: 97%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-top-right-radius: 30px;
                 border-bottom-right-radius: 30px;
                 background-color: $third-color;
+                border: 1px solid gray;
+                border-left: none;
                 .icon {
                     color: #ffffff;
                 }

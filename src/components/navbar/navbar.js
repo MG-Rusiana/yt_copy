@@ -30,7 +30,7 @@ export const Navbar = () => {
                     <img className='logo' src={ logo } />
                 </div>
                 <div className='navbar-middle'>
-                    <div>
+                    <div className='search-box'>
                         <input className='search' type="text" placeholder='Search' />
                         <div className='search-icon'>
                             <FontAwesomeIcon className='icon' icon={ faMagnifyingGlass } />
