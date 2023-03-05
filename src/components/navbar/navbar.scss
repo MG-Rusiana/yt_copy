@@ -210,7 +210,7 @@ $font-color: #f1f1f1;
     height: 585px;
     z-index: 10;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 73px;
     background-color: $third-color;
@@ -311,14 +311,14 @@ $font-color: #f1f1f1;
         .navbar-middle {
             justify-content: flex-end;
             .search-box{
-                width: 60px;
+                align-items: center;
                 div {
                     .search{
-                        display: none;
+                        display: none;  
                     }
                     .search-icon {
-                        width: 90%;
-                        background-color: transparent;
+                        width: 50%;
+                        background-color: blue;
                         border: none;
                     }
                 }
@@ -335,6 +335,16 @@ $font-color: #f1f1f1;
 @media only screen and (max-width: 620px) {
     .navbar-box {
         .navbar-middle {
+            justify-content: center;
+            .search-box{
+                width: 5px;
+                div {
+                    .search-icon {
+                        background-color: blue;
+                        border: none;
+                    }
+                }
+            }
             img {
                 display: none;
             }
@@ -344,6 +354,9 @@ $font-color: #f1f1f1;
 
 @media only screen and (max-width: 400px) {
     .navbar-box {
+        .navbar-middle{
+            justify-content: flex-end;
+        }
         .navbar-right {
             width: 50px;
             img {
