@@ -2,7 +2,7 @@
 export const Library = () => {
     return(
         <div>
-            Library
+            Library Screen
         </div>
     );
 }
