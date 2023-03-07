@@ -1,17 +1,18 @@
 import './App.css';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from './screens/home/home';
 import { Library } from './screens/library/library';
 
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Navigate replace to="/yt_copy"/>} />
+        <Route path="/yt_copy" element={<Home/>} />
         <Route path="libary" element={<Library />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
